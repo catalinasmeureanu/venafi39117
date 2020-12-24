@@ -12,7 +12,7 @@ vault status
 
 vault login "$RootToken"
 
-SHA256=$(sha256sum /Users/catalina/Documents/Tickets/39117/etc/vault/plugins/venafi-pki-monitor |cut -d' ' -f1)
+SHA256=$(sha256sum /etc/vault/plugins/venafi-pki-monitor |cut -d' ' -f1)
 
 vault policy write admin admin.hcl
 
